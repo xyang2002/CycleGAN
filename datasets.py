@@ -14,6 +14,7 @@ class ImageDataset(Dataset):
         # the root directory contains two subdirectories: A and B, each containing the corresponding images.
         self.files_A = sorted(glob.glob(os.path.join(root, '%s/A' % mode) + '/*.*'))
         self.files_B = sorted(glob.glob(os.path.join(root, '%s/B' % mode) + '/*.*'))
+        # example: "root/train/A/1.jpg"
 
     def __getitem__(self, index):
         item_A = self.transform(Image.open(self.files_A[index % len(self.files_A)]))
