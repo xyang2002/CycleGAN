@@ -2,7 +2,7 @@
 A clean and readable Pytorch implementation of CycleGAN (https://arxiv.org/abs/1703.10593)
 
 ## Network Architecture
-![network](https://github.com/xyang2002/CycleGAN/tree/master/output/cyclegan.png)
+![network](https://github.com/xyang2002/CycleGAN/raw/master/output/cyclegan.png)
 
 ## Prerequisites
 Code is intended to work with ```Python 3.6.x```, it hasn't been tested with previous versions
