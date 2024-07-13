@@ -10,7 +10,8 @@ class ImageDataset(Dataset):
     def __init__(self, root, transforms_=None, unaligned=False, mode='train'):
         self.transform = transforms.Compose(transforms_)
         self.unaligned = unaligned
-
+        
+        # the root directory contains two subdirectories: A and B, each containing the corresponding images.
         self.files_A = sorted(glob.glob(os.path.join(root, '%s/A' % mode) + '/*.*'))
         self.files_B = sorted(glob.glob(os.path.join(root, '%s/B' % mode) + '/*.*'))
 
